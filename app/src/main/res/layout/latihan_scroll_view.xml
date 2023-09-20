@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvSin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Synopsis"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"/>
+
+    <ScrollView
+        android:id="@+id/svDesckription"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/tvSin"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp">
+
+        <TextView
+            android:id="@+id/tvDec"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="14dp"
+            android:lineHeight="15dp"
+            android:text="@string/Sin"
+            />
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

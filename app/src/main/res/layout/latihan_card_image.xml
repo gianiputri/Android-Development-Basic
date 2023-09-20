@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp">
+
+            <ImageView
+                android:id="@+id/ivDestination"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:src="@drawable/swiss"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:id="@+id/tvJudul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIesen"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_below="@id/ivDestination"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                />
+
+<!--            <TextView-->
+<!--            android:id="@+id/ivFav"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:layout_below="@id/ivDestination"-->
+<!--            android:background="@drawable/baseline_favorite_24"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginTop="3dp"-->
+<!--            android:layout_marginEnd="5dp"-->
+<!--            android:backgroundTint="@color/red"/>-->
+
+            <TextView
+                android:id="@+id/tvKet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvJudul"
+                android:text="Amazing view can be enjoyed from above of refeshing city"
+                android:textStyle="bold"
+                android:textColor="#5E5E5E"/>
+
+            <Button
+                android:id="@+id/btLoc"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/tvKet"
+                android:background="@drawable/baseline_location_on_24"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/TeksLoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_toRightOf="@+id/btLoc"
+                android:layout_below="@+id/tvKet"
+                android:text="Switzterland"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/logoPrice"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/baseline_price_check_24"
+                android:layout_marginStart="45dp"
+                android:layout_toRightOf="@+id/TeksLoc"
+                android:layout_below="@+id/tvKet"
+                android:layout_marginTop="10dp"/>
+
+
+            <TextView
+                android:id="@+id/TeksPric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvKet"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="9dp"
+                android:text="10 / Package"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:text="PLAN TRIP NOW"
+                android:textColor="@color/red"
+                android:layout_alignParentBottom="true"/>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

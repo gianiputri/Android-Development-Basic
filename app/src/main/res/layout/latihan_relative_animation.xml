@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/gambar1"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/yaga" />
+
+    <ImageButton
+        android:id="@+id/ibBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvproduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*.ﾟYOTSUBA ‧₊˚"
+        android:textColor="#4F602A"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_below="@id/gambar1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$14.75"
+        android:textColor="#B6381F"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@id/tvproduk"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageButton
+        android:id="@+id/ibFavorite"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tvproduk"
+        android:background="@drawable/baseline_favorite_24"
+        android:layout_marginEnd="20dp"/>
+
+    <ImageButton
+        android:id="@+id/IbStar1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/baseline_star_24"
+        android:backgroundTint="#FBC02D"
+        android:layout_below="@+id/tvprice"
+        android:layout_marginStart="20dp"/>
+
+    <ImageButton
+        android:id="@+id/IbStar2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/baseline_star_24"
+        android:backgroundTint="#FBC02D"
+        android:layout_below="@+id/tvprice"
+        android:layout_toRightOf="@id/IbStar1"/>
+
+    <ImageButton
+        android:id="@+id/IbStar3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/baseline_star_24"
+        android:backgroundTint="#FBC02D"
+        android:layout_below="@+id/tvprice"
+        android:layout_toRightOf="@id/IbStar2"/>
+
+    <ImageButton
+        android:id="@+id/IbStar4"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/baseline_star_24"
+        android:backgroundTint="#FBC02D"
+        android:layout_below="@+id/tvprice"
+        android:layout_toRightOf="@id/IbStar3"/>
+
+    <ImageButton
+        android:id="@+id/IbStar5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvprice"
+        android:layout_toRightOf="@id/IbStar4"
+        android:background="@drawable/baseline_star_24"
+        android:backgroundTint="#D5D5D5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.0"
+        android:textSize="17dp"
+        android:textColor="#F57C00"
+        android:layout_toRightOf="@id/IbStar5"
+        android:layout_below="@id/tvprice"/>
+
+    <View
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/IbStar5"
+        android:layout_marginTop="20dp"
+        android:background="#c3c1c1" />
+
+    <TextView
+        android:id="@+id/ibTbrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/garis"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"
+        android:text="Brand"
+        android:textSize="18dp"
+        android:textColor="#6C6C6C" />
+
+    <TextView
+        android:id="@+id/IbTplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/garis"
+        android:layout_marginTop="25dp"
+        android:text="Kyoto"
+        android:layout_toRightOf="@id/ibTbrand"
+        android:textSize="18dp"
+        android:layout_marginStart="70dp"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/ibTtipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ibTbrand"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:text="Tipe"
+        android:textSize="18dp"
+        android:textColor="#6C6C6C" />
+
+    <TextView
+        android:id="@+id/IbTname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IbTplace"
+        android:layout_marginTop="20dp"
+        android:text="Qposket Sony angels doll 4.7"
+        android:layout_toRightOf="@id/ibTbrand"
+        android:textSize="18dp"
+        android:layout_marginStart="70dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/ibTdari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IbTname"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:text="Dimensions"
+        android:textSize="18dp"
+        android:textColor="#6C6C6C" />
+
+    <TextView
+        android:id="@+id/IbTdarimana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IbTname"
+        android:layout_marginTop="20dp"
+        android:text="15.9 x 12.8 inches"
+        android:layout_toRightOf="@id/ibTbrand"
+        android:textSize="18dp"
+        android:layout_marginStart="70dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="380dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="18dp"
+        android:backgroundTint="#B6381F"
+        android:text="Purchase"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="@color/White"/>
+
+
+</RelativeLayout>

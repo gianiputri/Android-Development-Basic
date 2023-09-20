@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".belajarScrollviewAct">
+
+    <ImageView
+        android:id="@+id/ivDestination"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/book" />
+
+    <ImageView
+        android:id="@+id/IvBookPict"
+        android:layout_width="129dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/book" />
+
+    <TextView
+        android:id="@+id/tvBooktittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toRightOf="@+id/IvBookPict"
+        android:text="Eddi and Emly"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brian Lewis"
+        android:layout_below="@+id/tvBooktittle"
+        android:layout_toRightOf="@+id/IvBookPict"
+        android:layout_marginTop="20dp"
+        android:textSize="13dp"
+        android:layout_marginStart="15dp"/>
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/baseline_star_24"
+        android:layout_toRightOf="@+id/tvAuthor"
+        android:layout_below="@+id/tvBooktittle"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:backgroundTint="#FBC02D"/>
+
+    <TextView
+        android:id="@+id/tvpoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.0"
+        android:textSize="13dp"
+        android:layout_below="@+id/tvBooktittle"
+        android:layout_toRightOf="@+id/star"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.890 Rewers"
+        android:layout_below="@+id/tvBooktittle"
+        android:layout_toRightOf="@id/tvpoin"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginStart="15dp"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="100dp"
+        android:layout_height="26dp"
+        android:backgroundTint="#22254E"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="36dp"
+        android:layout_below="@+id/IvBookPict"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:id="@+id/Card1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="science fiction"
+            android:textSize="12dp"
+            android:textAlignment="center"
+
+            android:textColor="@color/White"
+            android:layout_gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="100dp"
+        android:layout_height="26dp"
+        android:backgroundTint="#22254E"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/IvBookPict"
+        android:layout_toRightOf="@+id/card1"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fantasy"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/White"
+            android:layout_gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="100dp"
+        android:layout_height="26dp"
+        android:backgroundTint="#22254E"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/IvBookPict"
+        android:layout_toRightOf="@+id/card2"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fantasy"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/White"
+            android:layout_gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <TextView
+        android:id="@+id/tvsinopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="synopsis"
+        android:textSize="20dp"
+        android:layout_below="@+id/card3"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"/>
+
+    <ScrollView
+        android:id="@+id/SCROLVw"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/tvsinopsis"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+            <TextView
+                android:id="@+id/tvisiSinop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Emily thinks that she's just a normal kid, who until she met Eddie was quite content with her boring life.
+Going to school and humiliating the obnoxious bully 'Brent' and learning the piano were the most exciting things going for a 10-year-old kid living in Doon, a quiet and wintry port city nestled in the hills of New Anderson far away from the rest of the world in the far corner of the great Oceania Sea.Emily thinks that she's just a normal kid, who until she met Eddie was quite content with her boring life.
+Going to school and humiliating the obnoxious bully 'Brent' and learning the piano were the most exciting things going for a 10-year-old kid living in Doon, a quiet and wintry port city nestled in the hills of New Anderson far away from the rest of the world in the far corner of the great Oceania Sea.Emily thinks that she's just a normal kid, who until she met Eddie was quite content with her boring life.
+Going to school and humiliating the obnoxious bully 'Brent' and learning the piano were the most exciting things going for a 10-year-old kid living in Doon, a quiet and wintry port city nestled in the hills of New Anderson far away from the rest of the world in the far corner of the great Oceania Sea.Emily thinks that she's just a normal kid, who until she met Eddie was quite content with her boring life.
+Going to school and humiliating the obnoxious bully 'Brent' and learning the piano were the most exciting things going for a 10-year-old kid living in Doon, a quiet and wintry port city nestled in the hills of New Anderson far away from the rest of the world in the far corner of the great Oceania Sea.Emily thinks that she's just a normal kid, who until she met Eddie was quite content with her boring life.
+Going to school and humiliating the obnoxious bully 'Brent' and learning the piano were the most exciting things going for a 10-year-old kid living in Doon, a quiet and wintry port city nestled in the hills of New Anderson far away from the rest of the world in the far corner of the great Oceania Sea."
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+        <TextView
+        android:id="@+id/tvReviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reviews"
+        android:textSize="20dp"
+        android:layout_below="@+id/SCROLVw"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+        android:textColor="@color/black"/>
+
+<ScrollView
+    android:id="@+id/svDesckription"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:layout_below="@+id/tvReviews"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:scrollbars="none"
+    android:layout_above="@+id/btbutton"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp">
+
+    <!--review1-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardreview"
+        android:layout_width="390dp"
+        android:layout_height="120dp"
+
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp">
+
+            <ImageView
+                android:id="@+id/pp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:src="@drawable/jake" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="18dp"
+            android:text="sim jake's"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:text="The book is so good, i like it kaliah harus banget baca baca sekarangg!!!"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+<!--review2-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardreview2"
+        android:layout_width="390dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/cardreview"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPhoto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardPhoto3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/pp3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:src="@drawable/jake" />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/nama2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="18dp"
+            android:text="jay"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:text="senang ahmad ramy bisa berteman, ramy and friend!, bagus banget pokonya mah"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!--review3-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardreview3"
+        android:layout_width="390dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/cardreview2"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:src="@drawable/jake" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/nama3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="18dp"
+            android:text="usep"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text=" usep senang membaca buku ini karena dapat merasakan seperti yang ada di buku"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+
+    <Button
+        android:id="@+id/btbutton"
+        android:layout_width="390dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="continue to reading"
+        android:textColor="@color/White"
+        android:backgroundTint="#22254E" />
+    
+
+    
+
+</RelativeLayout>

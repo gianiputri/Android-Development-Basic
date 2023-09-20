@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".belajarRelativeActivity">
+
+    <TextView
+        android:id="@+id/kiriAtas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kiri atas"
+        android:textAllCaps="true"
+        android:textColor="#303F9F"
+        android:textSize="17dp"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:id="@+id/kananAtas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kanan atas"
+        android:textAllCaps="true"
+        android:textColor="#303F9F"
+        android:textSize="17dp"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:id="@+id/atasTengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kiri atas"
+        android:textAllCaps="true"
+        android:textColor="#303F9F"
+        android:textSize="17dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/kiriTengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kiri tengah"
+        android:textAllCaps="true"
+        android:textColor="#303F9F"
+        android:textSize="17dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/TengahTengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="tengah tengah"
+        android:textAllCaps="true"
+        android:textColor="#303F9F"
+        android:textSize="17dp" />
+
+
+    <TextView
+        android:id="@+id/KananTengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:text="kanan tengah"
+        android:textAllCaps="true"
+        android:textColor="#303F9F"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/bawahKiri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bawah kiri"
+        android:textAllCaps="true"
+        android:textColor="#303F9F"
+        android:textSize="17dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:id="@+id/bawahTengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="bawah Tengah"
+        android:textAllCaps="true"
+        android:textColor="#303F9F"
+        android:textSize="17dp" />
+    <TextView
+        android:id="@+id/bawahKanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bawah kanan"
+        android:textAllCaps="true"
+        android:textColor="#303F9F"
+        android:textSize="17dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:id="@+id/akuTengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="aku di atas tengah"
+        android:textAllCaps="true"
+        android:textColor="#303F9F"
+        android:textSize="17dp"
+        android:layout_above="@+id/TengahTengah"/>
+
+
+
+
+</RelativeLayout>

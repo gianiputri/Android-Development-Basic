@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlJudulDoa"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <ImageView
+                    android:id="@+id/ivGambarDoa"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/doa_harian" />
+
+                <TextView
+                    android:id="@+id/tvjudulDoa"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:maxLines="2"
+                    android:text="Doa mendapat mimpi baik"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/ibColspsep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/tvjudulDoa"
+                    android:background="@drawable/baseline_arrow_forward_ios_24" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#c1c0c0"/>
+
+            <RelativeLayout
+                android:id="@+id/rlisiDoa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                    <TextView
+                        android:id="@+id/tvdoaArab"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:text="اَلْحَمْدُ ِللهِ الَّذِيْ قَطْلَ الْحَاجَتِ"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20sp"
+                        android:maxLines="2"
+                        android:textStyle="bold"
+                        />
+
+                <TextView
+                    android:id="@+id/tvdoaLatin"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:text="Alhamdulillahil ladzii qodzoo haajaati"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="8dp"
+                    android:textSize="16sp"
+                    android:maxLines="2"
+                    android:layout_below="@id/tvdoaArab"
+                    />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
